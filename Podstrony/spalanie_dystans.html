@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spalanie dystans</title>
+    <link rel="stylesheet" href="../PlikiCSS/style.css">
+    <script src="../PlikiJS/spalanie_dystans.j"></script>
+</head>
+<body>
+    <h1>Spalanie dystans</h1>
+    <a href="../index.html" id="powrot">Powrót do strony głównej</a>
+
+    <div class="container"></div>
+
+        <div class="input-group">
+            <label for="dystans">Dystans (km):</label>
+            <input type="number" id="dystans" placeholder="Wpisz przebyte kilometry">
+        </div>
+        <div class="input-group">
+            <label for="paliwoZuzyte">Zużyte paliwo (l):</label>
+            <input type="number" id="paliwoZuzyte" placeholder="Wpisz ilość zużytego paliwa">
+        </div>
+        <button onclick="obliczZuzyciePaliwa()">Oblicz zużycie paliwa (l/100km)</button>
+        <p id="wynikZuzycie"></p>
+
+        <hr>
+
+        <div class="input-group">
+            <label for="srednieSpalanie">Średnie spalanie (l/100km):</label>
+            <input type="number" id="srednieSpalanie" placeholder="Wpisz średnie spalanie">
+        </div>
+        <div class="input-group">
+            <label for="iloscPaliwa">Ilość paliwa w baku (l):</label>
+            <input type="number" id="iloscPaliwa" placeholder="Wpisz ilość paliwa w baku">
+        </div>
+        <button onclick="obliczDystans()">Oblicz możliwy dystans (km)</button>
+        <p id="wynikDystans"></p>
+
+        <hr>
+
+        <div class="input-group">
+            <label for="dystansDoPokonania">Dystans do pokonania (km):</label>
+            <input type="number" id="dystansDoPokonania" placeholder="Wpisz dystans, który chcesz pokonać">
+        </div>
+        <div class="input-group">
+            <label for="srednieSpalanie">Średnie spalanie (l/100km):</label>
+            <input type="number" id="srednieSpalanie1" placeholder="Wpisz średnie spalanie">
+        </div>
+        <button onclick="obliczPotrzebnePaliwo()">Oblicz potrzebne paliwo (l)</button>
+        <p id="wynikPotrzebnePaliwo"></p>
+    </div>
+</body>
+</html>

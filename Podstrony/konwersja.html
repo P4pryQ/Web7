@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwersja</title>
+    <link rel="stylesheet" href="../PlikiCSS/style.css">
+    <script src="../PlikiJS/konwersja.j"></script>
+</head>
+<body>
+    <h1>Konwersja</h1>
+    <a href="../index.html" id="powrot">Powrót do strony głównej</a>
+    <p>Długosc: <input type="text" id="lenght"> Jednostka: <select id="unit">
+        <option value="km">Kilometr (km)</option>
+        <option value="m">metr (m)</option>
+        <option value="dm">decymetr (dm)</option>
+        <option value="cm">centymentr (cm)</option>
+        <option value="mm">milimetr (mm)</option>
+    </select></p>
+    <button onclick="konwersja()">Oblicz</button>
+    <p>Milimetry: <span id="mm"></span></p>
+    <p>Centymetr: <span id="cm"></span></p>
+    <p>Decymetr: <span id="dm"></span></p>
+    <p>Metr: <span id="m"></span></p>
+    <p>Kilometr: <span id="km"></span></p>
+</body>
+</html>

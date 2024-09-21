@@ -1,0 +1,60 @@
+*
+{
+    font-size: 120%;
+    color: black;
+    text-decoration: none;
+}
+
+#powrot
+{
+    color: blue;
+}
+
+table, th, td, tr
+{
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+
+th, td, tr
+{
+    width: 250px;
+    height: 140px;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.yellowgreen
+{
+    background-color: rgb(48, 199, 42);
+}
+
+.yellow
+{
+    background-color: yellow;
+}
+
+.grey
+{
+    background-color: grey;
+}
+
+.grey1
+{
+    background-color: rgb(186, 186, 186);
+}
+
+.white
+{
+    background-color: rgb(229, 228, 228);
+}
+
+td input
+{
+   width: 150px;
+}

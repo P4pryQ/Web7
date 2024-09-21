@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waluty</title>
+    <link rel="stylesheet" href="../PlikiCSS/style.css">
+    <script src="../PlikiJS/waluty.js"></script>
+</head>
+<body onload="changingPrices()">
+    <h1>Waluty</h1>
+    <a href="../index.html" id="powrot">Powrót do strony głównej</a>
+    <p id="status"></p>
+<table>
+    <tr>
+        <td class="grey">Nazwa waluty</td>
+        <td class="grey">Kurs w PLN</td>
+        <td class="grey">Rożnica od poprzedniego notowania</td>
+        <td class="grey">Zakup</td>
+        <td class="grey">Sprzedaż</td>
+        <td class="grey">Kwota do zapłaty w pln</td>
+        <td class="grey">Kwota otrzymana w pln</td>
+    </tr>
+    <tr>
+        <td class="grey1">EUR</td>
+        <td class="grey1" id="cenaEUR">4.05</td>
+        <td class="grey1" id="zmianaEUR">0.05</td>
+        <td class="grey1"><input type="number" id="zakupEURO"></td>
+        <td class="grey1"><input type="number" id="sprzedazEURO"></td>
+        <td class="grey1" id="zaplataEUR"></td>
+        <td class="grey1" id="otrzymanaEUR"></td>
+    </tr>
+    <tr>
+        <td class="white">USD</td>
+        <td class="white" id="cenaUSD">3.99</td>
+        <td class="white" id="zmianaUSD">0.15</td>
+        <td class="white"><input type="number" id="zakupUSD"></td>
+        <td class="white"><input type="number" id="sprzedazUSD"></td>
+        <td class="white" id="zaplataUSD"></td>
+        <td class="white" id="otrzymanaUSD"></td>
+    </tr>
+    <tr>
+        <td class="grey1">GBP</td>
+        <td class="grey1" id="cenaGBP">4.80</td>
+        <td class="grey1" id="zmianaGBP">-0.77</td>
+        <td class="grey1"><input type="number" id="zakupGBP"></td>
+        <td class="grey1"><input type="number" id="sprzedazGBP"></td>
+        <td class="grey1" id="zaplataGBP"></td>
+        <td class="grey1" id="otrzymanaGBP"></td>
+    </tr>
+    <tr>
+        <td colspan="5" class="green" id="suma">SUMA: </td>
+        <td class="yellowgreen" id="kwotaDoZaplatyPLN"></td>
+        <td class="yellow" id="kwotaDoOtrzymaniaPLN"></td>
+    </tr>
+</table>
+
+</body>
+</html>

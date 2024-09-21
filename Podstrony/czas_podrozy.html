@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czas podrozy</title>
+    <link rel="stylesheet" href="../PlikiCSS/style.css">
+    <script src="../PlikiJS/czas_podrozy.j"></script>
+</head>
+<body>
+    <h1>Czas podróży</h1>
+    <a href="../index.html" id="powrot">Powrót do strony głównej</a>
+
+    <div class="container"></div>
+
+        <div class="input-group">
+            <label for="odleglosc">Odległość:</label>
+            <input type="number" id="odleglosc" placeholder="Wpisz odległość">
+        </div>
+        <div class="input-group">
+            <label for="jednostkaOdleglosci">Jednostka odległości:</label>
+            <select id="jednostkaOdleglosci">
+                <option value="km">Kilometry</option>
+                <option value="m">Metry</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="predkosc">Średnia prędkość (km/h):</label>
+            <input type="number" id="predkosc" placeholder="Wpisz średnią prędkość">
+        </div>
+        <button onclick="obliczCzasPodrozy()">Oblicz przewidywany czas podróży</button>
+        <p id="wynikCzasPodrozy"></p>
+
+        <hr>
+
+        <div class="input-group">
+            <label for="dystans">Dystans:</label>
+            <input type="number" id="dystans" placeholder="Wpisz dystans">
+        </div>
+        <div class="input-group">
+            <label for="jednostkaDystansu">Jednostka dystansu:</label>
+            <select id="jednostkaDystansu">
+                <option value="km">Kilometry</option>
+                <option value="m">Metry</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="czasGodziny">Czas podróży (godziny):</label>
+            <input type="number" id="czasGodziny" placeholder="Wpisz czas w godzinach">
+        </div>
+        <div class="input-group">
+            <label for="czasMinuty">Czas podróży (minuty):</label>
+            <input type="number" id="czasMinuty" placeholder="Wpisz czas w minutach">
+        </div>
+        <button onclick="obliczSredniaPredkosc()">Oblicz średnią prędkość</button>
+        <p id="wynikSredniaPredkosc"></p>
+
+    </div>
+</body>
+</html>
